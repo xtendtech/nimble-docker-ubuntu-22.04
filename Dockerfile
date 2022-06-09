@@ -14,4 +14,5 @@ ARG     WMSPANEL_ACCOUNT=
 ARG     WMSPANEL_PASS=
 # RUN echo "management_listen_interfaces = *" >> /etc/nimble/nimble.conf
 ADD nimble /etc/nimble
-ENTRYPOINT      ["/usr/bin/nimble", "--conf-dir=/etc/nimble", "--log-dir=/var/log/nimble","--pidfile=/var/run/nimble/ni>EXPOSE 8081 1935 554 4444/udp
+ENTRYPOINT      ["/usr/bin/nimble", "--conf-dir=/etc/nimble", "--log-dir=/var/log/nimble","--pidfile=/var/run/nimble/pid>
+EXPOSE 8081 1935 554 4444/udp
